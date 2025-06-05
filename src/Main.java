@@ -1,4 +1,4 @@
-// Classe base
+
 class Produto {
     String nome;
     double preco;
@@ -13,7 +13,7 @@ class Produto {
     }
 }
 
-// Subclasse Livro
+
 class Livro extends Produto {
     String autor;
     int numeroPaginas;
@@ -31,7 +31,7 @@ class Livro extends Produto {
     }
 }
 
-// Subclasse Camisa
+
 class Camisa extends Produto {
     String cor;
     String tamanho;
@@ -49,10 +49,10 @@ class Camisa extends Produto {
     }
 }
 
-// Classe principal
+
 public class Main {
     public static void main(String[] args) {
-        Produto livro = new Livro("Java Programming", 59.90, "Autor A", 300);
+        Produto livro = new Livro("Programacao Java", 59.90, "Leanderson", 300);
         Produto camisa = new Camisa("Camisa Polo", 39.90, "Azul", "M");
 
         livro.exibirInfo();
